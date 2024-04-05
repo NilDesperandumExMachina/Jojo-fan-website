@@ -1,0 +1,88 @@
+.icon {
+    top: 10px;
+    left: 10px;
+}
+
+.image_right {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-image: url("jojo_background.jpg");
+    background-size: cover;
+    margin: 0; /* Remove default margin */
+    font-family: sans-serif;
+    color: rgb(246, 203, 49);
+    font-size: 18px;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+}
+
+h1 {
+    width: 100%;
+    background-color: rgb(75, 29, 159);
+    color: rgb(88, 194, 197);
+    padding: 10px; /* Add padding for better appearance */
+    margin: 0; /* Remove default margin */
+}
+
+footer {
+    color: yellow;
+}
+
+a {
+    color: yellow; /* Change 'link' to 'a' for proper link styling */
+}
+
+
+.title-image {
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+/*Tablet style*/
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for tablets */
+    header {
+        font-size: 20px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    body {
+      font-size: 20px;
+      padding: 4px;
+    }
+  }
+
+/*Smartphone style*/
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for smartphones */
+    header {
+        font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    body {
+      font-size: 16px;
+      padding: 2px;
+    }
+  }

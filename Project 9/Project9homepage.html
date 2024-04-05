@@ -1,0 +1,107 @@
+<!DOCTYPE >
+
+<!--Adam Dicken-->
+<!--Project 9-->
+<!--12/10/23-->
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>Using external stylesheet</title>
+        <link href="Project9.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </header>
+
+    <head>
+        <div class="image_right">
+        <img src="SP_fist.jpg" alt="FIST" class="icon">
+        <h1>Homepage</h1>
+        </div>
+    </head>
+
+    <h1>Jojo's Bizarre Adventure</h1>
+    <h3>Number of Seasons: 6</h3>
+    <h2>Streaming platforms Netflix and Hulu</h2>
+
+    <!--EXTERNAL LINK(S) HERE-->
+    <h4> “If you are interested in learning more about
+        <a href="https://www.youtube.com/watch?v=EnPs1Ltzgeg" target="_blank">what counts as a stand</a>? Please see Hamon Beat's video in the link.” 
+    </h4>
+
+    <body>
+        <blockquote>
+            Jojo's Bizarre Adventure is following the Joestar bloodline and their tribulations against the supernatural.
+
+            Click the screen to activate Time Stop
+
+        </blockquote>
+
+        <script>
+            $(document).ready(function () {
+                // Changes background image dynamically
+                setTimeout(function () {
+                changeBackgroundImage('url(path/to/new_background_image.jpg)');
+                }, 6000);
+
+        
+                // Continues with the color sequence
+                setTimeout(function () {
+                    changeBackgroundColor('purple');
+                }, 7000);
+        
+                setTimeout(function () {
+                    changeBackgroundColor('green');
+                }, 8000);
+        
+                setTimeout(function () {
+                    changeBackgroundColor('yellow');
+                }, 9000);
+        
+                setTimeout(function () {
+                    changeBackgroundColor('gray');
+                }, 10000);
+        
+            });
+
+            function changeBackgroundImage(imageUrl) {
+                $('body').css('background-image', imageUrl);
+            }
+            //This should change the background color back but it doesnt
+            //originally I wanted to play a sound while the background changes for effect but I could not do it
+            function changeBackgroundColor(color) {
+                $('body').css('background-color', color);
+            }
+        </script>
+        
+        
+    </body>
+
+    <nav>
+        <ul id="navlist">
+        
+            <li> <a href="protagonists.html">JoJo Protagonists [Jojos]</a></li>
+            <li> <a href="villians.html">JoJo Villians [JoFoes]</a></li>
+            <li> <a href="supporting characters.html">JoJo Supporting Characters [JoBros]</a></li>
+            <li> <a href="memes.html">JoJo Memes</a></li>
+
+        </ul>
+    </nav>
+
+
+    <footer>
+
+        <p>Here is a link to the show
+            <a href="https://www.imdb.com/title/tt2359704/" rel="HTML"></a>
+            IMDB.
+            </a>
+        </p>
+
+        <p> My email is 
+            <a href="adicken@student.cscc.edu" rel="HTML">
+                here.
+            </a>
+        </p>
+
+    </footer>
+
+</html>
+        

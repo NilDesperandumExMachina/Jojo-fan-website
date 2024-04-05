@@ -1,0 +1,49 @@
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #000; 
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 30px; 
+    text-align: center; 
+}
+
+
+thead {
+    background: #808080; 
+    color: white; 
+    font-weight: bold; 
+}
+
+tr:nth-child(even) {
+    background: #880880; 
+    color: white; 
+}
+
+tbody tr:nth-child(odd) {
+    background: #171717; 
+    color: white; 
+}
+
+
+tfoot {
+    background: #808080;
+    color: white; 
+    font-size: 9px; 
+    text-align: center; 
+}
+
+
+caption {
+    font-size: 35px; 
+    padding: 20px; 
+}
+
+
+
+
+
+
